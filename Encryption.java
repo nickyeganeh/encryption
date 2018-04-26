@@ -11,71 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
 
-/********************************************************************
- Written by: Nick Yeganeh
- Period: 7
 
-Our secret encryption code:
-Create an array of 8 integers and fill the array with random integers
-between 0 and 5 (inclusive). For each character in the file add the
-corresponding number to it's ASCII value. When you	get to the last
-number in your array you should start back at the beginning. 
-An example:
-
-array: 2 1 6 3 4 3 0 3 
-file: 				abcd
- 					EFGH
- 					1234
-encrypted file: 	ccig	// add 2 to a, 1 to b, 6 to c and 3 to d
-						IIGK 	// add 4 to E, 3 to F, 0 to G and 3 to H
-						3397	// add 2 to 1, 1 to 2, 6 to 3 and 3 to 4
-
-ASSIGNMENT: 							
- 	Then your program should have a button menu that gives the user
- 	the following options:
-
- 		Print a file
- 		Encrypt a file
- 		Decrypt a file
- 		Exit
-
- 	print: ask for the name of the input file, read it & print it in a
- 	 	JOP window. 
- 	encrypt: ask for the name of the input and output files, read  
- 		from the input file, encrypt it and write it to the output file.
-  	decrypt: ask for the name of the input and output files, read  
- 		from the input file, decrypt it and write it to the output file.
- 	exit: your program should run until the user chooses option 4.
-
-For all file names, just have the user input the file name. Add the
-.txt automatically.
-
-Remember to pattern your main method after the ones I have given you.
-There shouldn't be much code - just method calls and a loop to keep the
-program running until the user chooses to quit.
-
-Once you get this working add the following:
-	Ask the user whether they want to create a random key or read
-	a key from a file. If they want to create a random key they 	
-	should enter how many integers they want in the key and the file
- 	name they want to save the key to. If they want to read from a file
- 	they should enter the name of the file they want to read.
-
-GRADING: (50 points)
-
- _____ Formatting (5 points)
- _____ Your program is structured correctly and your code is
-  				well written (10 points)
- _____ Data files are read/written to correctly (10 points)
- _____ Encryption works correctly (10 points)
- _____ Decryption works correctly (10 points)
- _____ Key choice (random or file) works correctly (5 points)
-
-
- HAND IN:  Make a jar file, put it in my handin folder and 
-  	print your program.
-
- ********************************************************************/
 public class Encryption{
 	public static void changeJOP()
 	{
